@@ -1,0 +1,120 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather Dashboard</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet" />
+					<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="dashboard-container">
+			<div class="left-panel">
+				<p>Weather Dashboard</p>
+				<div class="location">
+					<h2 id="locationName"></h2>
+
+					<div class="search-box">
+						<input
+							type="text"
+							class="search"
+							id="locationInput"
+							placeholder="Enter city (e.g., London)" />
+						<button id="searchBtn">Search</button>
+					</div>
+				</div>
+				<div class="temperature">
+					<h1 id="temperature">20° <span>±3</span></h1>
+					<p id="wind"></p>
+					<p id="humidity"></p>
+				</div>
+
+				<div class="air-quality">
+					<div class="safe-indicator">
+						<p>Safe</p>
+						<div class="safe-bar"></div>
+					</div>
+					<div class="dangerous-indicator">
+						<p>Dangerous</p>
+						<div class="dangerous-bar"></div>
+					</div>
+					<p class="index">0.8%</p>
+				</div>
+
+				<div class="temp-chart">
+					<p id="temperature"></p>
+				</div>
+			</div>
+
+			<!-- Right panel -->
+			<div class="right-panel">
+				<div class="forecast">
+					<h2 id="locationName"></h2>
+					<p id="weatherDescription"></p>
+				</div>
+				<div class="weather-details">
+					<div id="weatherDisplay" class="weather-info">
+						<h2 id="locationName"></h2>
+						<p id="temperature"></p>
+						<p id="weatherDescription"></p>
+						<img id="weatherIcon" alt="" />
+						<p id="alerts"></p>
+						<p id="wind"></p>
+						<p id="humidity"></p>
+						<p id="pressure"></p>
+						<p id="visibility"></p>
+						<p id="sunrise"></p>
+						<p id="sunset"></p>
+						<p id="cloudiness"></p>
+					</div>
+				</div>
+
+				<div class="cities-comparison">
+					<div class="city-weather">
+						<p>Washington D.C.</p>
+						<p>13°C</p>
+						<p>High: 23°C, Low: 18°C</p>
+					</div>
+					<div class="city-weather">
+						<p>Oklahoma City</p>
+						<p>17°C</p>
+						<p>High: 20°C, Low: 13°C</p>
+					</div>
+					<div class="city-weather">
+						<p>Philadelphia</p>
+						<p>14°C</p>
+						<p>High: 18°C, Low: 10°C</p>
+					</div>
+					<div class="city-weather">
+						<p>San Francisco</p>
+						<p>12°C</p>
+						<p>High: 14°C, Low: 8°C</p>
+					</div>
+					<div class="city-weather">
+						<p>New York City</p>
+						<p>10°C</p>
+						<p>High: 11°C, Low: 6°C</p>
+					</div>
+					<div class="city-weather">
+						<p>South Dakota</p>
+						<p>-8°C</p>
+						<p>High: -6°C, Low: -12°C</p>
+					</div>
+					<div class="city-weather">
+						<p>North Dakota</p>
+						<p>-9°C</p>
+						<p>High: -7°C, Low: -13°C</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
